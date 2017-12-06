@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DailySpecialsActivity" />
+        <activity android:name=".FoodMenuActivity" />
+        <activity android:name=".BeerMenuActivity" />
+        <activity android:name=".DirectionsActivity"></activity>
     </application>
 
 </manifest>
