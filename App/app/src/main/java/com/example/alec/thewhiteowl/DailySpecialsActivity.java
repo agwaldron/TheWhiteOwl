@@ -16,9 +16,7 @@ public class DailySpecialsActivity extends AppCompatActivity {
         specialsToHome = (Button)findViewById(R.id.specials_to_home);
         specialsToHome.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                redirectHome();
-            }
+            public void onClick(View view) { redirectHome(); }
         });
     }
 

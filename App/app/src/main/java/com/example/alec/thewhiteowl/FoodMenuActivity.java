@@ -16,9 +16,7 @@ public class FoodMenuActivity extends AppCompatActivity {
         foodToHome = (Button)findViewById(R.id.food_to_home);
         foodToHome.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                redirectHome();
-            }
+            public void onClick(View view) { redirectHome(); }
         });
     }
 
