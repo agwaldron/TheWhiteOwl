@@ -6,5 +6,6 @@
     <string name="beer_menu_button_string">Beers On Tap</string>
     <string name="directions_button_string">Directions</string>
     <string name="contact_line">Contact Us: (435) 753-9165</string>
-    <string name="visit_line">Visit Us: 36 W Center St, Logan, UT 84321</string>
+    <string name="visit_line">Visit Us: 36 W Center St, Logan, UT</string>
+    <string name="address_string">36 W Center St, Logan, UT 84321</string>
 </resources>
