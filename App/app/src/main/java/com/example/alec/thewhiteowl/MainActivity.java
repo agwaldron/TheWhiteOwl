@@ -53,17 +53,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void redirectDailySpecials(){
         startActivity(new Intent(this, DailySpecialsActivity.class));
+        this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
     }
 
     public void redirectFoodMenu(){
         startActivity(new Intent(this, FoodMenuActivity.class));
+        this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
     }
 
     public void redirectBeerMenu(){
         startActivity(new Intent(this, BeerMenuActivity.class));
+        this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
     }
 
     public void redirectDirections(){
         startActivity(new Intent(this, DirectionsActivity.class));
+        this.overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
     }
 }

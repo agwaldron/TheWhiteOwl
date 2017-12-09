@@ -22,5 +22,6 @@ public class DailySpecialsActivity extends AppCompatActivity {
 
     public void redirectHome(){
         finish();
+        this.overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_right);
     }
 }
