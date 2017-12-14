@@ -8,4 +8,6 @@
     <string name="contact_line">Contact Us: (435) 753-9165</string>
     <string name="visit_line">Visit Us: 36 W Center St, Logan, UT</string>
     <string name="address_string">36 W Center St, Logan, UT 84321</string>
+    <string name="special_label">Daily Special</string>
+    <string name="soup_label">Soup of the Day</string>
 </resources>
