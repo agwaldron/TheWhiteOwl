@@ -14,6 +14,7 @@ public class DailySpecialsActivity extends AppCompatActivity {
         setContentView(R.layout.daily_specials);
 
         specialsToHome = (Button)findViewById(R.id.specials_to_home);
+        specialsToHome.setTextColor(getResources().getColor(R.color.colorDark, null));
         specialsToHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { redirectHome(); }
