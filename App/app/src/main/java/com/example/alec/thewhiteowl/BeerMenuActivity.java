@@ -38,7 +38,7 @@ public class BeerMenuActivity extends AppCompatActivity {
         lstView = findViewById(R.id.on_tap_list_view);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, beersArray);
         lstView.setAdapter(adapter);
-        
+
     }
 
     public void redirectHome(){
