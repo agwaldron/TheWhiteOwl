@@ -4,80 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorDark"
     tools:context="com.example.alec.thewhiteowl.MainActivity">
 
     <TextView
-        android:id="@+id/announcement_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/announcemnt_string"
+        android:id="@+id/name_text"
+        android:layout_width="301dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/app_name"
+        android:textSize="45dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/daily_specials_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="@string/specials_button_string"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="312dp"
+        android:layout_height="451dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/left_border"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/announcement_text" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/food_menu_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="@string/menu_button_string"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/daily_specials_button" />
+        <TextView
+            android:id="@+id/announcement_text"
+            android:layout_width="123dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/beer_menu_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="@string/beer_menu_button_string"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/food_menu_button" />
+        <Button
+            android:id="@+id/daily_specials_button"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorLight"
+            android:text="@string/specials_button_string"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/announcement_text" />
 
-    <Button
-        android:id="@+id/directions_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="@string/directions_button_string"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/beer_menu_button" />
+        <Button
+            android:id="@+id/food_menu_button"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorLight"
+            android:text="@string/menu_button_string"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/daily_specials_button" />
 
-    <TextView
-        android:id="@+id/contact_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="@string/contact_line"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/directions_button" />
+        <Button
+            android:id="@+id/beer_menu_button"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorLight"
+            android:text="@string/beer_menu_button_string"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food_menu_button" />
 
-    <TextView
-        android:id="@+id/visit_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/visit_line"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contact_text" />
+        <Button
+            android:id="@+id/directions_button"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorLight"
+            android:text="@string/directions_button_string"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/beer_menu_button" />
+
+        <TextView
+            android:id="@+id/contact_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/contact_line"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/directions_button" />
+
+        <TextView
+            android:id="@+id/visit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/visit_line"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contact_text" />
+
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
