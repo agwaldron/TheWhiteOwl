@@ -36,6 +36,7 @@ public class DirectionsActivity extends AppCompatActivity implements OnMapReadyC
         owlAddress = getString(R.string.address_string);
 
         directionsToHome = (Button)findViewById(R.id.directions_to_home);
+        directionsToHome.setTextColor(getResources().getColor(R.color.colorDark, null));
         directionsToHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
